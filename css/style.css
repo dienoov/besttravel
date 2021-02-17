@@ -1,0 +1,48 @@
+:root {
+    --navy-blue: #103c56;
+    --dark-red: #a41b25;
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+.text-navy-blue {
+    color: var(--navy-blue);
+}
+
+.img-carousel {
+    filter: brightness(0.5);
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.big-caption {
+    font-size: 5em;
+}
+
+.border-thick-navy-blue {
+    border: 12px solid var(--navy-blue);
+}
+
+.border-top-sky-blue {
+    border-top: 4px solid #1988bf;
+}
+
+.input-search {
+    background-color: #eee;
+    border: none;
+    border-radius: 0;
+}
+
+.input-search:focus {
+    border: 2px solid #aaa;
+    box-shadow: none;
+}
+
+.btn-search {
+    background-color: var(--dark-red);
+    color: white;
+}

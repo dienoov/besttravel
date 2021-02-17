@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bestTravel</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light shadow pb-3 border-top-sky-blue">
+    <div class="container">
+        <div class="navbar-brand">
+            <img src="img/logo.png" alt="logo" width="160">
+        </div>
+        <button class="navbar-toggler border-0" data-toggle="collapse" data-target="#nav">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="black" width="24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+        <div id="nav" class="collapse navbar-collapse justify-content-end">
+            <a href="#header" class="nav-link font-weight-bold text-navy-blue active">Home</a>
+            <a href="#search" class="nav-link text-dark">Search</a>
+            <a href="#features" class="nav-link text-dark">Features</a>
+            <a href="#contact" class="nav-link text-dark">Contact</a>
+        </div>
+    </div>
+</nav>
+<header id="header" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#header" data-slide-to="0" class="active"></li>
+        <li data-target="#header" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/header-1.jpg" alt="header-1" class="img-carousel">
+            <div class="carousel-caption p-5">
+                <p class="font-weight-bold big-caption mb-5 p-5">We Take Care of Your Trip</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/header-2.jpg" alt="header-2" class="img-carousel">
+            <div class="carousel-caption p-5">
+                <p class="font-weight-bold big-caption mb-5 p-5">We Take Care of Your Trip</p>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="search" class="my-5">
+    <div class="container">
+        <div class="card border-thick-navy-blue rounded-0">
+            <div class="card-header border-0 bg-white">
+                <h2 class="card-title font-weight-bold">Search flights</h2>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="d-flex">
+                        <div class="mb-3">
+                            <input type="radio" name="type" id="oneway">
+                            <label for="oneway">One-way</label>
+                        </div>
+                        <div class="mb-3 mx-3">
+                            <input type="radio" name="type" id="roundtrip">
+                            <label for="roundtrip">Roundtrip</label>
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-md-6">
+                            <label for="from">From</label>
+                            <input type="text" id="from" class="form-control input-search" placeholder="Leaving from">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="to">To</label>
+                            <input type="text" id="to" class="form-control input-search" placeholder="Going to">
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-md-6">
+                            <label for="departure">Departure date</label>
+                            <input type="text" id="departure" class="form-control input-search"
+                                   placeholder="Departure date">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="return">Return date</label>
+                            <input type="text" id="return" class="form-control input-search" placeholder="Return date">
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-md-3">
+                            <label for="adults">Adults</label>
+                            <input type="text" id="adults" class="form-control input-search" placeholder="Adults">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="children">Children</label>
+                            <input type="text" id="children" class="form-control input-search" placeholder="Children">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="infants">Infants</label>
+                            <input type="text" id="infants" class="form-control input-search" placeholder="Infants">
+                        </div>
+                        <div class="col-md-3">
+                            <label class="text-white">search</label>
+                            <button class="btn btn-block btn-danger btn-search rounded-0 font-weight-bold">Search
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="features" class="bg-light my-5 py-5">
+    <h1 class="font-weight-bold text-center py-5">Features for You!</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 text-center">
+                <img src="img/ticket-confirmed.png" alt="ticket-confirmed">
+                <h5 class="font-weight-bold">Easy to buy tickets</h5>
+                <p class="text-muted">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur delectus
+                    distinctio et facilis fuga, magni nam neque nostrum obcaecati.
+                </p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <img src="img/credit-card.png" alt="credit-card">
+                <h5 class="font-weight-bold">Multiple payment methods</h5>
+                <p class="text-muted">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur delectus
+                    distinctio et facilis fuga, magni nam neque nostrum obcaecati.
+                </p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <img src="img/discount-tag.png" alt="discount-tag">
+                <h5 class="font-weight-bold">Get special deals</h5>
+                <p class="text-muted">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur delectus
+                    distinctio et facilis fuga, magni nam neque nostrum obcaecati.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-6">
+                <img src="img/logo.png" alt="logo" width="128">
+                <h6 class="text-muted pt-3 pb-0">Whatsapp</h6>
+                <p>0868 1120 0888</p>
+                <h6 class="text-muted pt-3 pb-0">Email</h6>
+                <p>cs@besttravel.com</p>
+                <h6 class="text-muted pt-3 pb-0">Call Center</h6>
+                <p class="my-0">0806 7500 868 (Indonesia)</p>
+                <p>+6221 3993 0888</p>
+            </div>
+            <div class="col-lg-3 col-6">
+                <h5>Company</h5>
+                <p class="text-muted">Blog</p>
+                <p class="text-muted">Careers</p>
+                <p class="text-muted">Corporate</p>
+                <p class="text-muted">Partner</p>
+                <p class="text-muted">Elite Rewards</p>
+                <p class="text-muted">Protection</p>
+            </div>
+            <div class="col-lg-3 col-6">
+                <h5>Product</h5>
+                <p class="text-muted">Flights</p>
+                <p class="text-muted">To Dos</p>
+                <p class="text-muted">Events</p>
+                <p class="text-muted">Car Rentals</p>
+            </div>
+            <div class="col-lg-3 col-6">
+                <h5>Support</h5>
+                <p class="text-muted">Help Center</p>
+                <p class="text-muted">Group Booking</p>
+                <p class="text-muted">Privacy Policy</p>
+                <p class="text-muted">Terms & Conditions</p>
+                <p class="text-muted">Worry Free Fare</p>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="bg-light shadow-lg py-3">
+    <div class="container">
+        <p class="text-muted text-center">&copy; 2021 <span class="font-weight-bold">bestTravel</span>. All Rights Reserved</p>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
