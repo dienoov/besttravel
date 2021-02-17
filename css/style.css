@@ -23,6 +23,12 @@ html {
     font-size: 5em;
 }
 
+@media only screen and (max-width: 768px) {
+    .big-caption {
+        font-size: 3em;
+    }
+}
+
 .border-thick-navy-blue {
     border: 12px solid var(--navy-blue);
 }
